@@ -23,7 +23,7 @@ do
   
   manifest-tool push from-args \
     --platforms linux/amd64,linux/arm64 \
-    --template ghcr.io/loft-orbital/gitlab-runner-helper:alpine-latest-ARCH-$tag \
+    --template ghcr.io/rolay/gitlab-runner-helper:alpine3.15-ARCH-$tag \
     --target ghcr.io/rolay/gitlab-runner-helper:$tag
   gh release create $tag --generate-notes
 done
